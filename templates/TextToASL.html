@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <!-- Basic -->
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <!-- Mobile Metas -->
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <!-- Site Metas -->
+  <meta name="keywords" content="" />
+  <meta name="description" content="" />
+  <meta name="author" content="" />
+
+  <title>Arabic Sign Language</title>
+
+
+
+  <!-- bootstrap core css -->
+  <link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
+  <!-- progress barstle -->
+  <link rel="stylesheet" href="css/css-circular-prog-bar.css">
+  <!-- fonts style -->
+  <link href="https://fonts.googleapis.com/css?family=Poppins:400,700&display=swap" rel="stylesheet">
+  <!-- font wesome stylesheet -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+  <!-- Custom styles for this template -->
+  <link href="css/style.css" rel="stylesheet" />
+  <!-- responsive style -->
+  <link href="css/responsive.css" rel="stylesheet" />
+
+
+
+
+  <link rel="stylesheet" href="css/css-circular-prog-bar.css">
+
+  <link
+  rel="stylesheet"
+  type="text/css"
+  href="{{ url_for('static', filename='css/bootstrap.css')}}"
+/>
+
+
+<link
+rel="stylesheet"
+type="text/css"
+href="{{ url_for('static', filename='css/css-circular-prog-bar.css')}}"
+/>
+
+
+<link
+rel="stylesheet"
+type="text/css"
+href="{{ url_for('static', filename='css/style.css')}}"
+/>
+
+<link
+rel="stylesheet"
+type="text/css"
+href="{{ url_for('static', filename='css/responsive.css')}}"
+/>
+</head>
+
+<body>
+  <div class="top_container sub_pages">
+    <!-- header section strats -->
+    <header class="header_section">
+      <div class="container">
+        <nav class="navbar navbar-expand-lg custom_nav-container ">
+          <a class="navbar-brand" href="http://127.0.0.1:5000/">
+            <img src="/static/images/logo1.png" alt="">
+            <span>
+              ArSL
+            </span>
+          </a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <div class="d-flex ml-auto flex-column flex-lg-row align-items-center">
+              <ul class="navbar-nav  ">
+                <li class="nav-item active">
+                  <a class="nav-link" href="http://127.0.0.1:5000/ "> Home <span class="sr-only">(current)</span></a>
+                </li>
+                
+
+              </ul>
+              <form class="form-inline my-2 my-lg-0 ml-0 ml-lg-4 mb-3 mb-lg-0">
+                <button class="btn  my-2 my-sm-0 nav_search-btn" type="submit"></button>
+              </form>
+            </div>
+        </nav>
+      </div>
+    </header>
+  </div>
+  <section class="teacher_section layout_padding-bottom">
+    <div class="container">
+      <h2 class="main-heading ">
+        Choose an alphabet 
+      </h2>
+      <p class="text-center">
+          <select name="nom_select" onchange="loadImg(this.value);">
+			  <option value="00">----</option>
+        <option value="0">Alif</option>
+			  <option value="1">Ba</option>
+			  <option value="2">Ta</option>
+			  <option value="3">Tha</option>
+			  <option value="4">Jim</option>
+			  <option value="5">Ha</option>
+			  <option value="6">Kha</option>
+			  <option value="7">Dal</option>
+			  <option value="8">Dhal</option>
+			  <option value="9">Ra</option>
+			  <option value="10">Zay</option>
+			  <option value="11">Sin</option>
+			  <option value="12">Shin</option>
+			  <option value="13">Sad</option>
+			  <option value="14">Dad</option>
+			  <option value="15">Ta</option>
+			  
+        <option value="16">Za</option>
+			  <option value="17">Ayn</option>
+			  <option value="18">Ghayn</option>
+			  <option value="19">Fa</option>
+			  <option value="20">Qaf</option>
+			  <option value="21">Kaf</option>
+			  <option value="22">Lam</option>
+			  <option value="23">Mim</option>
+			  <option value="24">Nun</option>
+			  <option value="25">Ha</option>
+			  <option value="26">Waw</option>
+			  <option value="27">Ya</option>
+			  <option value="28">Taa</option>
+			  <option value="29">Al</option>
+			  <option value="30">Laa</option>
+			  <option value="31">Yaa</option>
+			  
+        
+    </select>
+      </p>
+      <div class="teacher_container layout_padding2">
+        <div class="card-deck">
+          <div class="card">
+            <img class="card-img-top" src="/static/images/photo.jpeg" alt="Card image cap" id="id_img" width="500" height="600">
+           
+          </div>
+     
+        </div>
+      </div>
+
+<script type="text/javascript">
+function loadImg(key) {
+    var arr = [
+        '1_10',
+        '2_10',
+		'3_10',
+		'4_10',
+		'5_10',
+		'6_10',
+		'7_10',
+		'8_10',
+		'9_10',
+		'10_10',
+		'11_10',
+		'12_10',
+		'13_10',
+		'14_10',
+		'15_10',
+		'16_10',
+		'17_10',
+		'18_10',
+		'19_10',
+		'20_10',
+		'21_10',
+		'22_10',
+		'23_10',
+		'24_10',
+		'25_10',
+		'26_10',
+		'27_10',
+		'28_10',
+		'29_10',
+		'30_10',
+		'31_10',
+		'32_10'
+    
+    ];
+    document.getElementById('id_img').src = '/static/img/' + arr[key] + '.jpg';
+}
+
+      
+       </script>
+      <div class="d-flex justify-content-center mt-3">
+        <a href="http://127.0.0.1:5000/ " class="call_to-btn  ">
+
+          <span>
+            Back home
+          </span>
+          <img src="/static/images/right-arrow.png" alt="">
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
+  <script type="text/javascript" src="js/bootstrap.js"></script>
+
+  </script>
+ 
+</body>
+
+</html>
